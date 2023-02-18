@@ -35,21 +35,18 @@
 
            <div class="md:flex">
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full md:w-4/6 gap-2">
-
-
-      
+            <div id="cards" class=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full md:w-4/6 gap-2">
 
                 <div class="card card-compact border border-1">
                   <figure class="w-full h-1/2 p-8 ">
                     <img src="images/triangle.png" alt="Shoes" />
                   </figure>
                   <div class="card-body text-center ">
-                    <h2 class=" font-bold">Triangle</h2>
+                    <h2 id="triangle-name" class=" font-bold">Triangle</h2>
                     <p class="">Area(A) = 0.5 * b * h</p>
-                    <p><input class="w-12 bg-slate-200" type="number" name="" id="" placeholder="b">cm <input class="w-12 bg-slate-200" type="number" name="" id="" placeholder="h">cm</p>
+                    <p><input class="w-12 bg-slate-200" type="number" name="" id="triangle-b-input" placeholder="b">cm <input class="w-12 bg-slate-200" type="number" name="" id="triangle-h-input" placeholder="h">cm</p>
 
-                    <button class="btn btn-primary bg-blue-600 text-white font-semibold w-full  p-2 rounded-lg">Calculate</button>
+                    <button id="triangle-calc-btn" class="btn btn-primary bg-blue-600 text-white font-semibold w-full  p-2 rounded-lg">Calculate</button>
                   </div>
                 </div>
 
@@ -58,10 +55,10 @@
                     <img src="images/rectangle.png" alt="Shoes" />
                   </figure>
                   <div class="card-body items-center text-center ">
-                    <h2 class="card-title font-bold">Rectangle</h2>
+                    <h2 id="rectangle-name" class="card-title font-bold">Rectangle</h2>
                     <p>Area(A) = w * l</p>
-                    <p><input class="w-12 bg-slate-200" type="number" name="" id="" placeholder="w">cm <input class="w-12 bg-slate-200" type="number" name="" id="" placeholder="l">cm</p>
-                      <button class="btn btn-primary bg-blue-600 text-white font-semibold w-full  p-2 rounded-lg">Calculate</button>
+                    <p><input class="w-12 bg-slate-200" type="number" name="" id="rectangle-w-input" placeholder="w">cm <input class="w-12 bg-slate-200" type="number" name="" id="rectangle-l-input" placeholder="l">cm</p>
+                      <button id="rectangle-calc-btn" class="btn btn-primary bg-blue-600 text-white font-semibold w-full  p-2 rounded-lg">Calculate</button>
                   </div>
                 </div>
 
@@ -72,31 +69,32 @@
                   <img src="images/parallelogram.png" alt="Shoes" />
                 </figure>
                 <div class="card-body items-center text-center ">
-                  <h2 class="card-title font-bold">Parallelogram</h2>
+                  <h2 id="paralelo-name" class="card-title font-bold">Parallelogram</h2>
                   <p>Area(A) =  b * h</p>
 
                   <div>
-                    b=<span id="paralel0-base">10</span>cm, h=<span id="paralelo-height">12</span>cm
+                    b=<span id="paralel0-b">10</span>cm, h=<span id="paralelo-h">12</span>cm
                   </div>
 
-                  <button class="btn btn-primary bg-blue-600 w-full text-white font-semibold mt-12 p-2 rounded-lg">Calculate</button>
+                  <button id="paralelogram-calc-btn" class="btn btn-primary bg-blue-600 w-full text-white font-semibold mt-12 p-2 rounded-lg">Calculate</button>
 
                 </div>
               </div>
+
 
               <div  class="card card-compact border border-1">
                 <figure class="w-full h-1/2 p-8 ">
                   <img cl src="images/rhombus.png" alt="Shoes" />
                 </figure>
                 <div class="card-body items-center text-center ">
-                  <h2 class="card-title font-bold">Rhombus</h2>
+                  <h2 id="rombos-name" class="card-title font-bold">Rhombus</h2>
                   <p>Area(A) = 0.5 * d<sub>1</sub> * d<sub>2</sub></p>
 
                   <div>
                     d<sub>1</sub>=<span id="rhombus-data1">16</span>cm, d<sub>2</sub>=<span id="rhombus-data2">8</span>cm
                   </div>
 
-                    <button class="btn btn-primary bg-blue-600 w-full font-semibold mt-6 mb-4 p-2 text-white rounded-lg">Calculate</button>
+                    <button id="rhombus-calc-btn" class="btn btn-primary bg-blue-600 w-full font-semibold mt-6 mb-4 p-2 text-white rounded-lg">Calculate</button>
                 </div>
 
               </div>
@@ -108,28 +106,28 @@
                   <img src="images/pentagon.png" alt="Shoes"  />
                 </figure>
                 <div class="card-body items-center text-center ">
-                  <h2 class="card-title font-bold">Pentagon</h2>
+                  <h2 id="pentagon-name" class="card-title font-bold">Pentagon</h2>
                   <p>Area(A) = 0.5 * p * b</p>
                  <div>
                   p=<span id="pentagon-p">6</span>cm, b=<span id="pentagon-b">10</span>cm
                  </div>
-                    <button class="btn btn-primary bg-blue-600 w-full mt-6 mb-4 p-2 text-white font-semibold rounded-lg">Calculate</button>
+                    <button id="pentagon-calc-btn" class="btn btn-primary bg-blue-600 w-full mt-6 mb-4 p-2 text-white font-semibold rounded-lg">Calculate</button>
                 </div>
               </div>
 
             
 
-            <div class="card    border border-1 mx-auto px-4">
+            <div class="card  card-compact  border border-1 mx-auto px-4">
                 <figure class="w-full h-1/2 p-8">
                   <img src="images/ellipse.png" alt="Shoes" />
                 </figure>
                 <div class="card-body items-center text-center ">
-                  <h2 class="card-title font-bold">Ellipse</h2>
+                  <h2 id="ellip-name" class="card-title font-bold">Ellipse</h2>
                   <p>Area(A) = &pi;ab</p>
                   <div>
                     a=<span id="ellip-a">10</span>cm, b=<span id="ellip-b">4</span>cm
                    </div>
-                    <button class="btn btn-primary bg-blue-600 w-full mt-6 mb-2 p-2 font-semibold rounded-lg text-white	">Calculate</button>
+                    <button id="ellipse-calc-btn" class="btn btn-primary bg-blue-600 w-full mt-6 mb-2 p-2 font-semibold rounded-lg text-white	">Calculate</button>
                 </div>
               </div>
 
@@ -156,14 +154,13 @@
 
                       </thead>
 
-                      <tbody>
+                      <tbody id="tBody">
 
-                        <!--amn row create korba dynamically js deye jokhn button gulo te click korbe -->
-                        <tr>
+                        <!-- <tr>
                           <td>1. Ganderton</td>
                           <td>Specialist</td>
                           <td>Blue</td>
-                        </tr>
+                        </tr> -->
                        
                       </tbody>
                     </table>
@@ -182,8 +179,8 @@
     </main>
 
     <script src="./js/utilities.js"></script>
-    <script src="js/blog.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/blog.js"></script>
 
 </body>
 
