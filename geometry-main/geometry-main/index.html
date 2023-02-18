@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="container mx-auto px-4">
+
+    <header class="container mx-auto bg-cyan-100">
+        <div class="flex justify-between">
+            <div class="px-4">
+                <h3 class="text-2xl font-semibold	
+                ">Interactive</h3>
+                <p>Geometry Genius</p>
+
+            </div>
+            <div class="px-4 py-4">
+                <button id="blog-btn" class="bg-sky-600 px-4 py-2 text-white font-semibold rounded-lg">Blog</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-4">
+
+
+        <section>
+
+           <div class="md:flex">
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full md:w-4/6 gap-2">
+
+
+      
+
+                <div class="card card-compact border border-1">
+                  <figure class="w-full h-1/2 p-8 ">
+                    <img src="images/triangle.png" alt="Shoes" />
+                  </figure>
+                  <div class="card-body text-center ">
+                    <h2 class=" font-bold">Triangle</h2>
+                    <p class="">Area(A) = 0.5 * b * h</p>
+                    <p><input class="w-12 bg-slate-200" type="number" name="" id="" placeholder="b">cm <input class="w-12 bg-slate-200" type="number" name="" id="" placeholder="h">cm</p>
+
+                    <button class="btn btn-primary bg-blue-600 text-white font-semibold w-full  p-2 rounded-lg">Calculate</button>
+                  </div>
+                </div>
+
+                <div class="card card-compact border border-1">
+                  <figure class="w-full h-1/2 p-10 ">
+                    <img src="images/rectangle.png" alt="Shoes" />
+                  </figure>
+                  <div class="card-body items-center text-center ">
+                    <h2 class="card-title font-bold">Rectangle</h2>
+                    <p>Area(A) = w * l</p>
+                    <p><input class="w-12 bg-slate-200" type="number" name="" id="" placeholder="w">cm <input class="w-12 bg-slate-200" type="number" name="" id="" placeholder="l">cm</p>
+                      <button class="btn btn-primary bg-blue-600 text-white font-semibold w-full  p-2 rounded-lg">Calculate</button>
+                  </div>
+                </div>
+
+
+                
+              <div  class="card card-compact border border-1">
+                <figure class="w-full h-1/2 p-8 ">
+                  <img src="images/parallelogram.png" alt="Shoes" />
+                </figure>
+                <div class="card-body items-center text-center ">
+                  <h2 class="card-title font-bold">Parallelogram</h2>
+                  <p>Area(A) =  b * h</p>
+
+                  <div>
+                    b=<span id="paralel0-base">10</span>cm, h=<span id="paralelo-height">12</span>cm
+                  </div>
+
+                  <button class="btn btn-primary bg-blue-600 w-full text-white font-semibold mt-12 p-2 rounded-lg">Calculate</button>
+
+                </div>
+              </div>
+
+              <div  class="card card-compact border border-1">
+                <figure class="w-full h-1/2 p-8 ">
+                  <img cl src="images/rhombus.png" alt="Shoes" />
+                </figure>
+                <div class="card-body items-center text-center ">
+                  <h2 class="card-title font-bold">Rhombus</h2>
+                  <p>Area(A) = 0.5 * d<sub>1</sub> * d<sub>2</sub></p>
+
+                  <div>
+                    d<sub>1</sub>=<span id="rhombus-data1">16</span>cm, d<sub>2</sub>=<span id="rhombus-data2">8</span>cm
+                  </div>
+
+                    <button class="btn btn-primary bg-blue-600 w-full font-semibold mt-6 mb-4 p-2 text-white rounded-lg">Calculate</button>
+                </div>
+
+              </div>
+
+
+              <div class="card card-compact border border-1">
+
+                <figure class="w-full h-1/2 p-8">
+                  <img src="images/pentagon.png" alt="Shoes"  />
+                </figure>
+                <div class="card-body items-center text-center ">
+                  <h2 class="card-title font-bold">Pentagon</h2>
+                  <p>Area(A) = 0.5 * p * b</p>
+                 <div>
+                  p=<span id="pentagon-p">6</span>cm, b=<span id="pentagon-b">10</span>cm
+                 </div>
+                    <button class="btn btn-primary bg-blue-600 w-full mt-6 mb-4 p-2 text-white font-semibold rounded-lg">Calculate</button>
+                </div>
+              </div>
+
+            
+
+            <div class="card    border border-1 mx-auto px-4">
+                <figure class="w-full h-1/2 p-8">
+                  <img src="images/ellipse.png" alt="Shoes" />
+                </figure>
+                <div class="card-body items-center text-center ">
+                  <h2 class="card-title font-bold">Ellipse</h2>
+                  <p>Area(A) = &pi;ab</p>
+                  <div>
+                    a=<span id="ellip-a">10</span>cm, b=<span id="ellip-b">4</span>cm
+                   </div>
+                    <button class="btn btn-primary bg-blue-600 w-full mt-6 mb-2 p-2 font-semibold rounded-lg text-white	">Calculate</button>
+                </div>
+              </div>
+
+            </div>
+
+
+            <div class="w-full md:w-2/6">
+
+                <h1 class="text-center text-4xl font-semibold underline underline-2">Area Calculation</h1>
+
+                <div class="">
+
+                  <div class="overflow-x-auto">
+                    <table class="table w-full">
+                      <!-- head -->
+                      <thead>
+
+                        <!-- aikhane aita tule deba -->
+                        <!-- <tr>
+                          <th>Name</th>
+                          <th>Job</th>
+                          <th>Favorite</th>
+                        </tr> -->
+
+                      </thead>
+
+                      <tbody>
+
+                        <!--amn row create korba dynamically js deye jokhn button gulo te click korbe -->
+                        <tr>
+                          <td>1. Ganderton</td>
+                          <td>Specialist</td>
+                          <td>Blue</td>
+                        </tr>
+                       
+                      </tbody>
+                    </table>
+                  </div>
+
+                </div>
+                
+
+            </div>
+
+           </div>
+
+        </section>
+
+        
+    </main>
+
+    <script src="./js/utilities.js"></script>
+    <script src="js/blog.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
